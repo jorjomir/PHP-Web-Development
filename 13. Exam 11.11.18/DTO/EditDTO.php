@@ -1,0 +1,56 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: jorjomir
+ * Date: 11/11/2018
+ * Time: 11:43 AM
+ */
+
+namespace DTO;
+
+
+class EditDTO
+{
+    /**
+     * @var BookDTO
+     */
+    private $book;
+
+    /**
+     * @var GenreDTO[]
+     */
+    private $genres;
+
+    /**
+     * @return BookDTO
+     */
+    public function getBook(): BookDTO
+    {
+        return $this->book;
+    }
+
+    /**
+     * @param BookDTO $book
+     */
+    public function setBook(BookDTO $book): void
+    {
+        $this->book = $book;
+    }
+
+    /**
+     * @return GenreDTO[]
+     */
+    public function getGenres()
+    {
+        return $this->genres;
+    }
+
+    /**
+     * @param GenreDTO[] $genres
+     */
+    public function setGenres($genres): void
+    {
+        $this->genres = $genres;
+    }
+
+}
